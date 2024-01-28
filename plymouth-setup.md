@@ -1,4 +1,3 @@
-# Plymouth Setup
 Install the required packages:
 ```
 $ sudo apt install plymouth plymouth-themes
