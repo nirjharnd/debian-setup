@@ -29,5 +29,5 @@ $ sudo plymouth-set-default-theme -R emerald
 
 
 [^1]: *quiet splash loglevel=0* must be at the end of the line.
-[^2]: GFXMODE resolution must match any supported display resolution
+[^2]: *GFXMODE* resolution must match any supported display resolution
 [^3]: default theme for debian bookworm
