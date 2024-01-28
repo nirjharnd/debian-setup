@@ -4,14 +4,13 @@
 - Disable ipv6 stack systemwide
 - Disable cpu mitigations
 - Enable Intel *fastboot* and *frame buffer compression*
-- Clean booting[^1]
-- Enable plymouth & set it's resolition[^2]
+- Clean booting[^1] & enable plymouth
 
 Edit */etc/default/grub*:
 ```
 GRUB_CMDLINE_LINUX_DEFAULT="nowatchdog ipv6.disable=1 mitigations=off i915.fastboot=1 i915.enable_fbc=1 quiet splash loglevel=0"
 GRUB_CMDLINE_LINUX="ipv6.disable=1"
-GRUB_GFXMODE=1366x768x32
+GRUB_GFXMODE=1366x768x32[^2]
 ```
 Run:
 ```
