@@ -30,7 +30,7 @@ We will not use any 2D video drivers from the *xserver-xorg-video* packages. So,
 $ sudo apt install xorg xserver-xorg xserver-xorg-input-libinput xserver-xorg-video-fbdev
 ```
 ### Install Video Driver & Plugins
-Since we will be using Intel graphics with only *vaapi* decoding, we do not need the non-free package. Also, we are going to install some utilities related to the video driver.
+Since we will be using Intel graphics with only *vaapi* decoding, we do not need the non-free package.
 ```
 $ sudo apt install intel-media-va-driver intel-gpu-tools mesa-va-drivers mesa-vulkan-drivers mesa-utils vainfo vulkan-tools gstreamer1.0-gl
 ```
