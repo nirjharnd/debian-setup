@@ -6,7 +6,7 @@ These packages are needed for proper suspend & resume support.
 $ sudo apt install acpi-support acpid powermgmt-base upower
 ```
 ### Install Disk & USB support
-These packages are needed for various disk and USB related operations and compatibilties.
+These packages are needed for various disk and USB related operations and compatibility.
 ```
 $ sudo apt install udisks2 usb-modeswitch usb.ids usbutils
 ```
