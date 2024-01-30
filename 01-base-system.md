@@ -5,7 +5,7 @@
 
 ## Post-Installation
 Now we will have only the command prompt. We will install selected additional packages to get a lean Debian system without any bloats.
-### Configure **APT** to not install extra packages
+### Configure APT to not install extra packages
 Create the config file:
 ```
 $ sudo touch /etc/apt/apt.conf.d/99cleaninstall
@@ -29,17 +29,17 @@ We will not use any 2D video drivers from the *xserver-xorg-video* packages. So,
 ```
 $ sudo apt install xorg xserver-xorg xserver-xorg-input-libinput xserver-xorg-video-fbdev
 ```
-### Install Video Driver & Hardware Acceleration Plugins
+### Install Video driver & hardware acceleration plugins
 Since we will be using Intel graphics with only *vaapi* decoding, we do not need the non-free package[^1].
 ```
 $ sudo apt install intel-media-va-driver intel-gpu-tools mesa-va-drivers mesa-vulkan-drivers mesa-utils vainfo vulkan-tools gstreamer1.0-gl libva-glx2
 ```
-### Install Sound System & Plugins
+### Install Sound system & plugins
 We will be using newer Pipewire.
 ```
 $ sudo apt install pipewire pipewire-audio gstreamer1.0-pipewire gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
 ```
-### Install Bluetooth System
+### Install Bluetooth system
 We need only the bluetooth system working and nothing else. The bluetooth-audio is already handled by *pipewire*.
 ```
 $ sudo apt install bluez bluez-obexd
