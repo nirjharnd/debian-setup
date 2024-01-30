@@ -23,7 +23,7 @@ $ sudo apt install hdparm lm-sensors smartmontools
 ### Install system & hardware information tools
 These packages will provide information of our hardware and their loads.
 ```
-$sudo apt install htop inxi neofetch powertop intel-gpu-tools pulseaudio-utils vainfo mesa-utils vulkan-tools
+$ sudo apt install htop inxi neofetch powertop intel-gpu-tools pulseaudio-utils vainfo mesa-utils vulkan-tools
 ```
 ### Install Firewall
 I prefer *ufw* as firewall. It's pretty secure, easy to use and has a gui which we will install later.
