@@ -53,12 +53,9 @@ Now install the required firmware[^1]:
 ```
 $ sudo apt install firmware-linux-free firmware-misc-nonfree firmware-intel-sound firmware-realtek
 ```
-Make sure intel microcode update in installed:
+Make sure intel microcode update is installed and remove amd microcode[^2]:
 ```
 $ sudo apt install intel-microcode
-```
-Remove unrequired amd microcode:
-```
 $ sudo apt autoremove --purge amd64-microcode
 ```
 Finally, reboot the system.
@@ -67,3 +64,4 @@ $ sudo reboot
 ```
 
 [^1]: Refer to your system hardwares for required firmwares.
+[^2]: For AMD processors, keep amd microcode and remove intel microcode.
