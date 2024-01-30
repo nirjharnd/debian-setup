@@ -30,7 +30,7 @@ We will not use any 2D video drivers from the *xserver-xorg-video* packages. So,
 $ sudo apt install xorg xserver-xorg xserver-xorg-input-libinput xserver-xorg-video-fbdev
 ```
 ### Install Video Driver & Hardware Acceleration Plugins
-Since we will be using Intel graphics with only *vaapi* decoding, we do not need the non-free package.
+Since we will be using Intel graphics with only *vaapi* decoding, we do not need the non-free package[^1].
 ```
 $ sudo apt install intel-media-va-driver intel-gpu-tools mesa-va-drivers mesa-vulkan-drivers mesa-utils vainfo vulkan-tools gstreamer1.0-gl libva-glx2
 ```
@@ -49,11 +49,11 @@ By default, Debian installs a lot of uneeded firmwares. So, remove them first in
 ```
 $ sudo apt autoremove --purge firmware*
 ```
-Now install the required firmware[^1]:
+Now install the required firmware[^2]:
 ```
 $ sudo apt install firmware-linux-free firmware-misc-nonfree firmware-intel-sound firmware-realtek
 ```
-Make sure intel microcode update is installed and remove amd microcode[^2]:
+Make sure intel microcode update is installed and remove amd microcode:
 ```
 $ sudo apt install intel-microcode
 $ sudo apt autoremove --purge amd64-microcode
@@ -63,5 +63,5 @@ Finally, reboot the system.
 $ sudo reboot
 ```
 
-[^1]: Refer to your system hardwares for required firmwares.
-[^2]: For AMD processors, keep amd microcode and remove intel microcode.
+[^1]: Replace *intel-media-va-driver* package with *i965-va-driver* package for the Intel processors older than 5th Gen.
+[^2]: Refer to your system hardwares for required firmwares.
