@@ -61,5 +61,9 @@ Remove unrequired amd microcode:
 ```
 $ sudo apt autoremove --purge amd64-microcode
 ```
+Finally, reboot the system.
+```
+$ sudo reboot
+```
 
 [^1]: Refer to your system hardwares for required firmwares.
