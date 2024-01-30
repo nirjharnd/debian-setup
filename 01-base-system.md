@@ -32,7 +32,7 @@ $ sudo apt install xorg xserver-xorg xserver-xorg-input-libinput xserver-xorg-vi
 ### Install Video driver & hardware acceleration plugins
 Since we will be using Intel graphics with only *vaapi* decoding, we do not need the non-free package[^1].
 ```
-$ sudo apt install intel-media-va-driver mesa-va-drivers mesa-vulkan-drivers mesa-utils vainfo vulkan-tools gstreamer1.0-gl libva-glx2
+$ sudo apt install intel-media-va-driver mesa-va-drivers mesa-vulkan-drivers gstreamer1.0-gl libva-glx2
 ```
 ### Install Sound system & plugins
 We will be using newer Pipewire.
