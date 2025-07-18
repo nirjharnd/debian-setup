@@ -8,8 +8,8 @@ This repository holds the post installation configurations of my Linux Mint syst
 - **Memory**: Samsung 16GB DDR3 3200MHz
 - **Storage**: 120GB Samsung Evo 750 SSD, 1TB Samsung Spinpoint 5400RPM HDD
 - **Network**: Realtek Gigabit Ethernet, Intel AC3160 Wireless & Bluetooth, TP-Link WN832N Wi-Fi Dongle(Realtek RTL8192EU chipset)
-- **OS**: Debian 12 Bookworm
-- **DE**: Cinnamon on Xorg
+- **OS**: Linux Mint
+- **DE**: Cinnamon on X11
 
 ## Footnote
 The steps must be followed by the ascending order.
