@@ -1,5 +1,5 @@
 ## Introduction
-This repository holds the post installation configurations of my Debian system. I do a bare-minimum installation of Debian consisting only the command-line prompt and then build my system on top of it. The packages I install are suited to work with my laptop hardware which is given below.
+This repository holds the post installation configurations of my Linux Mint system. I always remove unnecessarry pakcages after installation.
 
 ### My System
 - **Model**: Lenovo G50-80
